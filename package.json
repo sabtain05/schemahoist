@@ -1,0 +1,56 @@
+{
+  "name": "schemahoist",
+  "version": "1.0.0",
+  "description": "Zero-dependency, runtime-agnostic LLM & MCP JSON Schema normalizer with deterministic constraint hoisting",
+  "keywords": [
+    "json-schema",
+    "llm",
+    "mcp",
+    "openai",
+    "anthropic",
+    "gemini",
+    "structured-outputs",
+    "zod",
+    "openapi",
+    "schema-normalizer",
+    "constraint-hoisting",
+    "typescript"
+  ],
+  "homepage": "https://github.com/sabtain05/schemahoist#readme",
+  "bugs": {
+    "url": "https://github.com/sabtain05/schemahoist/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabtain05/schemahoist.git"
+  },
+  "license": "MIT",
+  "author": "Sabtain Ali <sabtain05>",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/conformance.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,11 @@
+node_modules/
+coverage/
+.nyc_output/
+package-lock.json
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+*.tgz
+.env
+.env.*
